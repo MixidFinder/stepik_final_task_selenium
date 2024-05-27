@@ -8,3 +8,24 @@ class MainPageLocators:
 class LoginPageLocators:
     LOGIN_FORM = (By.CSS_SELECTOR, "#login_form")
     REGISTER_FORM = (By.CSS_SELECTOR, "#register_form")
+
+
+class ProductPageLotators:
+    ADD_TO_CART_BTN = (By.CSS_SELECTOR, ".btn-primary.btn-add-to-basket")
+    BOOK_TITLE = (
+        By.CSS_SELECTOR,
+        "#content_inner > article > div.row > div.col-sm-6.product_main > h1",
+    )
+    BOOK_TITLE_IN_CART = (
+        By.CSS_SELECTOR,
+        "#messages > div:nth-child(1) > div > strong",
+    )
+    BOOK_PRICE = (
+        By.CSS_SELECTOR,
+        "#content_inner > article > div.row > div.col-sm-6.product_main > p.price_color",
+    )
+    CART_PRICE = (
+        By.CSS_SELECTOR,
+        "#messages > div.alert.alert-safe.alert-noicon.alert-info.fade.in > div > p:nth-child(1) > strong",
+    )
+    ALERT_SUCCES = (By.CSS_SELECTOR, "#messages > div:nth-child(1)")
