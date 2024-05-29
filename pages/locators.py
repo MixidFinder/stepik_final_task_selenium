@@ -10,7 +10,7 @@ class LoginPageLocators:
     REGISTER_FORM = (By.CSS_SELECTOR, "#register_form")
 
 
-class ProductPageLotators:
+class ProductPageLocators:
     ADD_TO_CART_BTN = (By.CSS_SELECTOR, ".btn-primary.btn-add-to-basket")
     BOOK_TITLE = (
         By.CSS_SELECTOR,
@@ -29,3 +29,8 @@ class ProductPageLotators:
         "#messages > div.alert.alert-safe.alert-noicon.alert-info.fade.in > div > p:nth-child(1) > strong",
     )
     ALERT_SUCCES = (By.CSS_SELECTOR, "#messages > div:nth-child(1)")
+
+
+class BasePageLocators:
+    LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
